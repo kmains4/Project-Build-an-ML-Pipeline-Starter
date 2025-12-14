@@ -179,3 +179,21 @@ Please, make sure all steps are using **the same** python version and that you h
 ## License
 
 [License](LICENSE.txt)
+
+## Project Overview
+This project builds an end-to-end ML pipeline to predict short-term rental prices in NYC using MLflow, Weights & Biases, and Hydra.
+
+The pipeline includes:
+- Data ingestion and artifact versioning
+- Data validation with configurable thresholds
+- Train/validation/test splitting
+- Random Forest model training
+- Experiment tracking and model registry
+
+## Links
+- **GitHub Repository:** https://github.com/kmains4/Project-Build-an-ML-Pipeline-Starter
+- **Weights & Biases Project:** https://wandb.ai/kmains4-western-governors-university/nyc_airbnb
+
+## Notes on Data Validation
+The pipeline correctly fails when invalid data is provided (e.g., insufficient row count) and passes when validation thresholds are overridden via Hydra configuration. This demonstrates robust data validation and pipeline gating behavior.
+
